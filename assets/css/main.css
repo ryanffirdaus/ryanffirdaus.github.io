@@ -1,0 +1,31 @@
+/* Material Symbols icon font settings */
+.material-symbols-outlined {
+  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Frosted-glass surface */
+.glass-card {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(221, 231, 238, 0.4);
+}
+
+/* Hero section background gradient */
+.twilight-gradient {
+  background: linear-gradient(135deg, #f9f9f9 0%, #e6f1fa 50%, #cee5ff 100%);
+}
+
+/* Subtle depth shadow */
+.elevated-shadow {
+  box-shadow: 0 10px 40px -10px rgba(11, 54, 88, 0.08);
+}
+
+/* Active state for image slider thumbnails */
+.thumbnail-active {
+  border-color: #00639b;
+  opacity: 1;
+  transform: scale(1.05);
+}

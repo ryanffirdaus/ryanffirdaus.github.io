@@ -1,159 +1,520 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="RESTful API Services - Backend APIs built with Laravel and Node.js">
-    <title>RESTful API Services | Ryan</title>
-    
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <link rel="stylesheet" href="../css/project-detail.css">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar scrolled" id="navbar">
-        <div class="nav-container">
-            <a href="../index.html" class="nav-logo">
-                <span class="logo-text">Ryan</span>
-            </a>
-            <div class="nav-menu" id="nav-menu">
-                <a href="../index.html#home" class="nav-link">Home</a>
-                <a href="../index.html#about" class="nav-link">About</a>
-                <a href="../index.html#skills" class="nav-link">Skills</a>
-                <a href="../index.html#projects" class="nav-link active">Projects</a>
-                <a href="../index.html#contact" class="nav-link">Contact</a>
-            </div>
-            <button class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
-                <span class="hamburger"></span>
+<!doctype html>
+
+<html class="scroll-smooth" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project AURORA | Alex Chen</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;600;700;800&amp;display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script src="../assets/js/tailwind.config.js"></script>
+    <link rel="stylesheet" href="../assets/css/main.css" />
+  </head>
+  <body class="bg-background font-body text-on-surface antialiased">
+    <div id="site-header"></div>
+    <main class="pt-32 pb-24 max-w-[1200px] mx-auto px-6">
+      <!-- Hero Section -->
+      <header class="mb-16">
+        <div
+          class="flex flex-col md:flex-row justify-between items-end gap-6 mb-12"
+        >
+          <div class="space-y-4 max-w-2xl">
+            <nav
+              class="flex items-center gap-2 text-muted-stone text-label uppercase tracking-widest mb-4"
+            >
+              <a class="hover:text-primary transition-colors" href="#"
+                >Projects</a
+              >
+              <span class="material-symbols-outlined text-sm"
+                >chevron_right</span
+              >
+              <span class="text-primary font-bold">Project Aurora</span>
+            </nav>
+            <h1
+              class="font-display text-display md:text-[64px] text-on-surface leading-none tracking-tight"
+            >
+              Project "AURORA"
+            </h1>
+            <p class="text-subheading text-slate-text max-w-xl">
+              A next-generation real-time data visualization platform for
+              enterprise analytics, focusing on high-density information
+              architecture and seamless cross-platform performance.
+            </p>
+          </div>
+          <div class="flex gap-3">
+            <button
+              class="p-3 border border-primary text-primary rounded-lg hover:bg-subtle-mist transition-all active:scale-95 flex items-center gap-2"
+            >
+              <span class="material-symbols-outlined">open_in_new</span>
+              <span class="font-subheading text-body-sm">Live Preview</span>
             </button>
+            <button
+              class="p-3 bg-primary text-on-primary rounded-lg elevated-shadow hover:brightness-110 transition-all active:scale-95 flex items-center gap-2"
+            >
+              <span class="material-symbols-outlined">code</span>
+              <span class="font-subheading text-body-sm">View Code</span>
+            </button>
+          </div>
         </div>
-    </nav>
-
-    <!-- Project Header -->
-    <section class="project-header">
-        <div class="container">
-            <a href="../index.html#projects" class="back-link">
-                <i class="fas fa-arrow-left"></i>
-                <span>Back to Projects</span>
-            </a>
-            <h1 class="project-page-title">RESTful API Services</h1>
-            <p class="project-tagline">Backend APIs for web and mobile apps</p>
-            <div class="tech-tags">
-                <span class="tech-tag">PHP</span>
-                <span class="tech-tag">Laravel</span>
-                <span class="tech-tag">MySQL</span>
+        <!-- Interactive Image Slider -->
+        <div class="space-y-6">
+          <div
+            class="w-full aspect-video rounded-[24px] overflow-hidden elevated-shadow relative group"
+          >
+            <img
+              alt="Project Aurora Interface"
+              class="w-full h-full object-cover transform transition-transform duration-700"
+              id="main-slider-image"
+              src="https://lh3.googleusercontent.com/aida/ADBb0ujreaqjcgpD7nCpnOH9il1YvDX5vGu3CSPKj5rEGLYOJ0QlW_xpMXBhXgorzbK37oN7e6XtUxJI7eBlFXAYQBVLJQWRwWNuLDQ9tBhL08baoZqS67dC8YQHEM2yQ53P6gGTP4KPPU3dnArhI51CjPlba5MNYo-laVFCnMGmhqWkGN4Y2wUvYeRZgc4IeazyxaCs-5jq9ntCdMt5FDEBLGUOs2l5P_iQKI67JeZ36yRQakwUEAPFTqk1tWAG"
+            />
+            <!-- Sliding Controls -->
+            <div
+              class="absolute inset-0 flex items-center justify-between px-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+            >
+              <button
+                class="p-3 bg-white/20 backdrop-blur-md text-white rounded-full hover:bg-white/40 transition-all active:scale-90"
+                onclick="prevSlide()"
+              >
+                <span class="material-symbols-outlined">arrow_back_ios</span>
+              </button>
+              <button
+                class="p-3 bg-white/20 backdrop-blur-md text-white rounded-full hover:bg-white/40 transition-all active:scale-90"
+                onclick="nextSlide()"
+              >
+                <span class="material-symbols-outlined pl-1"
+                  >arrow_forward_ios</span
+                >
+              </button>
             </div>
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent pointer-events-none"
+            ></div>
+          </div>
+          <!-- Thumbnail Gallery -->
+          <div class="grid grid-cols-4 gap-4 md:gap-6">
+            <button
+              class="thumbnail-btn overflow-hidden rounded-[24px] border-4 border-transparent transition-all duration-300 opacity-70 hover:opacity-100 thumbnail-active elevated-shadow aspect-video"
+              onclick="setSlide(0)"
+            >
+              <img
+                alt="Dashboard Interface"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida/ADBb0ujreaqjcgpD7nCpnOH9il1YvDX5vGu3CSPKj5rEGLYOJ0QlW_xpMXBhXgorzbK37oN7e6XtUxJI7eBlFXAYQBVLJQWRwWNuLDQ9tBhL08baoZqS67dC8YQHEM2yQ53P6gGTP4KPPU3dnArhI51CjPlba5MNYo-laVFCnMGmhqWkGN4Y2wUvYeRZgc4IeazyxaCs-5jq9ntCdMt5FDEBLGUOs2l5P_iQKI67JeZ36yRQakwUEAPFTqk1tWAG"
+              />
+            </button>
+            <button
+              class="thumbnail-btn overflow-hidden rounded-[24px] border-4 border-transparent transition-all duration-300 opacity-70 hover:opacity-100 elevated-shadow aspect-video"
+              onclick="setSlide(1)"
+            >
+              <img
+                alt="Fintech App Interface"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAmBvdN2FpbuPMM1ZGeTthXeNOSaisqXBoKi34NfNt2Uvtviv2n8RbI4Fz2CXQhlVt9BLf-Eq25pPU1p-wjnORKc5BIYH2dLY3w0ZLhn8HpXaVCuhQK33t4ZidUN9SjSHXItcLCk4srbeWrfryi_cDacJR2JpAGdfEKQlcOqQWFw_3h6ORXJ63nyPlDiBDxIkk4S7CYCqSO_8vGfJwbOrDF9TM7oiouRlbpc_5h_2JCYgZ50gJ7fSsEDavPZK4LOEvI5z6AbGBdpFyK"
+              />
+            </button>
+            <button
+              class="thumbnail-btn overflow-hidden rounded-[24px] border-4 border-transparent transition-all duration-300 opacity-70 hover:opacity-100 elevated-shadow aspect-video"
+              onclick="setSlide(2)"
+            >
+              <img
+                alt="Documentation Interface"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDqS6CGadGYBbH_hMZRis0Sk5_axH0wL0vDygxgbg1vD8cwK39xhjvg1HEc2IjUpfrjmVCbyIQsOU9fk7SYjJ6zh-V7Ao-xyFrjFQ49h_w6dqJxpoEQY8nYrVEmcql4tgAFdaQ-At1hZbiC1URx7_METeLwfXpiLEByhRf--Ei0KJ-z_tCv9WWm4O1UnhxG2sFLKS0fx14g8rnIFXZU_0mItIZFu-_zALgiFbrzLAX_7_i5luQtBjDZ-aS1AT7jG8l5AERM-sIebb9e"
+              />
+            </button>
+            <button
+              class="thumbnail-btn overflow-hidden rounded-[24px] border-4 border-transparent transition-all duration-300 opacity-70 hover:opacity-100 elevated-shadow aspect-video"
+              onclick="setSlide(3)"
+            >
+              <img
+                alt="Monitoring Dashboard"
+                class="w-full h-full object-cover"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDWDMKTNd8Bswp7sGTdlbJjgly-39GA9QJ9x7PYpTE7ANLSpU_lyyclqx1MPOwRAqfczB_tcwgQWUgTzSdxZh12HNe-1XhFH_JmlmRtnc-XPCU2zWcK_SED_2lZdT4SxL2oNxRBJQNCLDZdrv8mC2h-9lYA4sC23r-TKNB5qV1X4zF7JMNYtyzkXLOZsB8SC2Nrbskqy1zzI9aLpfRYFUSFlsijtI7P5PdSiU64FpmZruXeCXcaRRs1S1At2Tt7OfCHaKBFyZeM3k3S"
+              />
+            </button>
+          </div>
         </div>
-    </section>
-
-    <!-- Project Content -->
-    <section class="project-detail">
-        <div class="container">
-            <div class="project-gallery">
-                <div class="gallery-main">
-                    <div class="image-placeholder">
-                        <i class="fas fa-image"></i>
-                        <span>API Documentation Screenshot</span>
-                    </div>
-                </div>
-                <div class="gallery-thumbs">
-                    <div class="gallery-thumb">
-                        <div class="image-placeholder">
-                            <i class="fas fa-image"></i>
-                        </div>
-                    </div>
-                    <div class="gallery-thumb">
-                        <div class="image-placeholder">
-                            <i class="fas fa-image"></i>
-                        </div>
-                    </div>
-                </div>
+      </header>
+      <!-- Project Content Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        <!-- Main Column -->
+        <div class="lg:col-span-8 space-y-16">
+          <!-- The Challenge -->
+          <section class="space-y-6">
+            <div class="flex items-center gap-4">
+              <div
+                class="w-10 h-10 rounded-full bg-subtle-mist flex items-center justify-center text-primary"
+              >
+                <span class="material-symbols-outlined">track_changes</span>
+              </div>
+              <h2 class="font-heading text-headline-lg text-on-surface">
+                The Challenge
+              </h2>
             </div>
-
-            <div class="project-info">
-                <div class="info-section">
-                    <h2>About This Project</h2>
-                    <p>
-                        A collection of RESTful APIs built using Laravel and Node.js that power 
-                        various web and mobile applications. Designed with security and 
-                        performance in mind.
-                    </p>
-                    <p>
-                        All APIs follow REST conventions and come with proper documentation 
-                        for easy integration.
-                    </p>
-                </div>
-
-                <div class="info-section">
-                    <h2>Key Features</h2>
-                    <ul class="feature-list">
-                        <li>
-                            <i class="fas fa-check"></i>
-                            <span>RESTful design patterns</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check"></i>
-                            <span>JWT authentication</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check"></i>
-                            <span>Rate limiting and security</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check"></i>
-                            <span>API documentation</span>
-                        </li>
-                        <li>
-                            <i class="fas fa-check"></i>
-                            <span>Database optimization</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="info-section">
-                    <h2>Technical Details</h2>
-                    <div class="tech-details">
-                        <div class="tech-item">
-                            <span class="tech-label">Framework</span>
-                            <span class="tech-value">Laravel</span>
-                        </div>
-                        <div class="tech-item">
-                            <span class="tech-label">Database</span>
-                            <span class="tech-value">MySQL</span>
-                        </div>
-                        <div class="tech-item">
-                            <span class="tech-label">Auth</span>
-                            <span class="tech-value">JWT</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="info-section">
-                    <h2>Status</h2>
-                    <p class="project-status">
-                        <i class="fas fa-lock"></i>
-                        Private Repository - Various client projects
-                    </p>
-                </div>
+            <div
+              class="pl-14 space-y-4 text-body text-slate-text leading-relaxed"
+            >
+              <p>
+                Modern analytics tools often suffer from information overload,
+                making it difficult for stakeholders to extract meaningful
+                insights quickly. For Project Aurora, the goal was to
+                consolidate multi-stream data from over 20 different sources
+                into a single, cohesive dashboard that responded in under 100ms.
+              </p>
+              <p>
+                Key obstacles included handling high-throughput WebSockets while
+                maintaining a 60fps UI, and designing a responsive interface
+                that could scale from 4K wall monitors down to tablet devices
+                without losing data granularity.
+              </p>
             </div>
+          </section>
+          <!-- The Solution -->
+          <section class="space-y-6">
+            <div class="flex items-center gap-4">
+              <div
+                class="w-10 h-10 rounded-full bg-subtle-mist flex items-center justify-center text-primary"
+              >
+                <span class="material-symbols-outlined">lightbulb</span>
+              </div>
+              <h2 class="font-heading text-headline-lg text-on-surface">
+                The Solution
+              </h2>
+            </div>
+            <div class="pl-14">
+              <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                <div
+                  class="p-6 bg-surface-container-low border border-cloud-gray rounded-2xl space-y-3"
+                >
+                  <h3 class="font-subheading text-on-surface">
+                    Distributed Architecture
+                  </h3>
+                  <p class="text-body-sm text-slate-text">
+                    Implemented a micro-frontend architecture using React and
+                    Vite to ensure isolated state management for each widget.
+                  </p>
+                </div>
+                <div
+                  class="p-6 bg-surface-container-low border border-cloud-gray rounded-2xl space-y-3"
+                >
+                  <h3 class="font-subheading text-on-surface">
+                    Smart Rendering
+                  </h3>
+                  <p class="text-body-sm text-slate-text">
+                    Utilized Canvas-based visualization libraries for the Heat
+                    Map and Sankey charts to handle 10k+ data points without
+                    lag.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="p-8 bg-on-primary-container text-on-primary rounded-[24px] elevated-shadow relative overflow-hidden"
+              >
+                <div class="relative z-10 space-y-4">
+                  <h3 class="font-heading text-heading">
+                    Engineered for Precision
+                  </h3>
+                  <p class="text-body opacity-90">
+                    "Aurora's core engine uses a custom-built WebWorker pipeline
+                    to offload data processing from the main thread, ensuring
+                    the UI remains fluid even during peak traffic periods."
+                  </p>
+                </div>
+                <div class="absolute -right-12 -bottom-12 opacity-10">
+                  <span class="material-symbols-outlined text-[160px]"
+                    >architecture</span
+                  >
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- Key Results -->
+          <section class="space-y-6">
+            <div class="flex items-center gap-4">
+              <div
+                class="w-10 h-10 rounded-full bg-subtle-mist flex items-center justify-center text-primary"
+              >
+                <span class="material-symbols-outlined">query_stats</span>
+              </div>
+              <h2 class="font-heading text-headline-lg text-on-surface">
+                Key Results
+              </h2>
+            </div>
+            <div class="pl-14 grid grid-cols-2 md:grid-cols-4 gap-4">
+              <div
+                class="text-center p-6 bg-surface-container-lowest border border-cloud-gray rounded-2xl"
+              >
+                <div class="font-display text-heading text-primary">45%</div>
+                <div class="text-caption text-muted-stone uppercase">
+                  Faster Insight
+                </div>
+              </div>
+              <div
+                class="text-center p-6 bg-surface-container-lowest border border-cloud-gray rounded-2xl"
+              >
+                <div class="font-display text-heading text-primary">99.9%</div>
+                <div class="text-caption text-muted-stone uppercase">
+                  Uptime
+                </div>
+              </div>
+              <div
+                class="text-center p-6 bg-surface-container-lowest border border-cloud-gray rounded-2xl"
+              >
+                <div class="font-display text-heading text-primary">-30%</div>
+                <div class="text-caption text-muted-stone uppercase">
+                  Latency
+                </div>
+              </div>
+              <div
+                class="text-center p-6 bg-surface-container-lowest border border-cloud-gray rounded-2xl"
+              >
+                <div class="font-display text-heading text-primary">12k+</div>
+                <div class="text-caption text-muted-stone uppercase">
+                  Active Users
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-    </section>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <p class="footer-copyright">
-                    &copy; 2025 Ryan. All rights reserved.
-                </p>
+        <!-- Sidebar Column -->
+        <aside class="lg:col-span-4 space-y-8">
+          <!-- Tech Stack Card -->
+          <div
+            class="p-8 bg-surface-container-lowest border border-cloud-gray rounded-[24px] elevated-shadow space-y-6 sticky top-24"
+          >
+            <h3 class="font-heading text-heading text-on-surface">
+              Tech Stack
+            </h3>
+            <div class="space-y-6">
+              <div>
+                <span class="text-label text-muted-stone uppercase block mb-3"
+                  >Frontend Architecture</span
+                >
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 bg-subtle-mist text-slate-text text-body-sm rounded-md border border-cloud-gray/50"
+                    >React 18</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-subtle-mist text-slate-text text-body-sm rounded-md border border-cloud-gray/50"
+                    >TypeScript</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-subtle-mist text-slate-text text-body-sm rounded-md border border-cloud-gray/50"
+                    >Tailwind CSS</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-subtle-mist text-slate-text text-body-sm rounded-md border border-cloud-gray/50"
+                    >D3.js</span
+                  >
+                </div>
+              </div>
+              <div>
+                <span class="text-label text-muted-stone uppercase block mb-3"
+                  >Backend &amp; Infrastructure</span
+                >
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 bg-subtle-mist text-slate-text text-body-sm rounded-md border border-cloud-gray/50"
+                    >Node.js</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-subtle-mist text-slate-text text-body-sm rounded-md border border-cloud-gray/50"
+                    >PostgreSQL</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-subtle-mist text-slate-text text-body-sm rounded-md border border-cloud-gray/50"
+                    >Redis</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-subtle-mist text-slate-text text-body-sm rounded-md border border-cloud-gray/50"
+                    >AWS Lambda</span
+                  >
+                </div>
+              </div>
+              <div>
+                <span class="text-label text-muted-stone uppercase block mb-3"
+                  >Testing &amp; Tooling</span
+                >
+                <div class="flex flex-wrap gap-2">
+                  <span
+                    class="px-3 py-1 bg-subtle-mist text-slate-text text-body-sm rounded-md border border-cloud-gray/50"
+                    >Jest</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-subtle-mist text-slate-text text-body-sm rounded-md border border-cloud-gray/50"
+                    >Cypress</span
+                  >
+                  <span
+                    class="px-3 py-1 bg-subtle-mist text-slate-text text-body-sm rounded-md border border-cloud-gray/50"
+                    >GitHub Actions</span
+                  >
+                </div>
+              </div>
             </div>
+            <hr class="border-cloud-gray" />
+            <div class="space-y-4">
+              <div class="flex items-center justify-between text-body-sm">
+                <span class="text-muted-stone">Duration</span>
+                <span class="font-bold text-on-surface">6 Months</span>
+              </div>
+              <div class="flex items-center justify-between text-body-sm">
+                <span class="text-muted-stone">Role</span>
+                <span class="font-bold text-on-surface"
+                  >Lead Fullstack Eng.</span
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Meta/Share -->
+          <div class="px-8 flex justify-between items-center text-muted-stone">
+            <span class="text-label">Share Project</span>
+            <div class="flex gap-2">
+              <button
+                class="w-8 h-8 rounded-full hover:bg-subtle-mist hover:text-primary transition-all flex items-center justify-center"
+              >
+                <span class="material-symbols-outlined text-lg">share</span>
+              </button>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <!-- Next Project Navigation -->
+      <nav
+        class="mt-24 pt-16 border-t border-cloud-gray"
+        aria-label="Project navigation"
+      >
+        <div
+          class="flex flex-col md:flex-row items-center justify-between gap-8 group"
+        >
+          <div
+            class="flex flex-col items-center md:items-start text-center md:text-left"
+          >
+            <span
+              class="text-label text-muted-stone uppercase tracking-widest mb-2"
+              >Up Next</span
+            >
+            <h2
+              class="font-display text-headline-lg text-on-surface group-hover:text-primary transition-colors"
+            >
+              Project "NEBULA"
+            </h2>
+            <p class="text-body-sm text-slate-text max-w-xs mt-2">
+              Autonomous AI-driven supply chain optimizer with predictive
+              modeling.
+            </p>
+          </div>
+          <a
+            class="group relative flex items-center justify-center w-24 h-24 bg-primary text-on-primary rounded-full elevated-shadow transform hover:scale-110 transition-all duration-300"
+            href="#"
+          >
+            <span
+              class="material-symbols-outlined text-4xl group-hover:translate-x-1 transition-transform"
+              >arrow_forward</span
+            >
+            <svg
+              class="absolute inset-0 w-full h-full -rotate-90 pointer-events-none"
+              viewBox="0 0 100 100"
+            >
+              <circle
+                cx="50"
+                cy="50"
+                fill="none"
+                r="48"
+                stroke="rgba(255,255,255,0.1)"
+                stroke-width="2"
+              ></circle>
+              <circle
+                class="transition-all duration-700"
+                cx="50"
+                cy="50"
+                fill="none"
+                r="48"
+                stroke="white"
+                stroke-dasharray="301.59"
+                stroke-dashoffset="240"
+                stroke-width="2"
+              ></circle>
+            </svg>
+          </a>
         </div>
-    </footer>
+      </nav>
+    </main>
+    <div id="site-footer"></div>
+    <script src="../assets/js/layout.js"></script>
+    <script>
+      const images = [
+        "https://lh3.googleusercontent.com/aida/ADBb0ujreaqjcgpD7nCpnOH9il1YvDX5vGu3CSPKj5rEGLYOJ0QlW_xpMXBhXgorzbK37oN7e6XtUxJI7eBlFXAYQBVLJQWRwWNuLDQ9tBhL08baoZqS67dC8YQHEM2yQ53P6gGTP4KPPU3dnArhI51CjPlba5MNYo-laVFCnMGmhqWkGN4Y2wUvYeRZgc4IeazyxaCs-5jq9ntCdMt5FDEBLGUOs2l5P_iQKI67JeZ36yRQakwUEAPFTqk1tWAG",
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuAmBvdN2FpbuPMM1ZGeTthXeNOSaisqXBoKi34NfNt2Uvtviv2n8RbI4Fz2CXQhlVt9BLf-Eq25pPU1p-wjnORKc5BIYH2dLY3w0ZLhn8HpXaVCuhQK33t4ZidUN9SjSHXItcLCk4srbeWrfryi_cDacJR2JpAGdfEKQlcOqQWFw_3h6ORXJ63nyPlDiBDxIkk4S7CYCqSO_8vGfJwbOrDF9TM7oiouRlbpc_5h_2JCYgZ50gJ7fSsEDavPZK4LOEvI5z6AbGBdpFyK",
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuDqS6CGadGYBbH_hMZRis0Sk5_axH0wL0vDygxgbg1vD8cwK39xhjvg1HEc2IjUpfrjmVCbyIQsOU9fk7SYjJ6zh-V7Ao-xyFrjFQ49h_w6dqJxpoEQY8nYrVEmcql4tgAFdaQ-At1hZbiC1URx7_METeLwfXpiLEByhRf--Ei0KJ-z_tCv9WWm4O1UnhxG2sFLKS0fx14g8rnIFXZU_0mItIZFu-_zALgiFbrzLAX_7_i5luQtBjDZ-aS1AT7jG8l5AERM-sIebb9e",
+        "https://lh3.googleusercontent.com/aida-public/AB6AXuDWDMKTNd8Bswp7sGTdlbJjgly-39GA9QJ9x7PYpTE7ANLSpU_lyyclqx1MPOwRAqfczB_tcwgQWUgTzSdxZh12HNe-1XhFH_JmlmRtnc-XPCU2zWcK_SED_2lZdT4SxL2oNxRBJQNCLDZdrv8mC2h-9lYA4sC23r-TKNB5qV1X4zF7JMNYtyzkXLOZsB8SC2Nrbskqy1zzI9aLpfRYFUSFlsijtI7P5PdSiU64FpmZruXeCXcaRRs1S1At2Tt7OfCHaKBFyZeM3k3S",
+      ];
+      let currentIndex = 0;
+      const mainImg = document.getElementById("main-slider-image");
+      const thumbBtns = document.querySelectorAll(".thumbnail-btn");
 
-    <script type="module" src="../js/main.js"></script>
-</body>
+      function updateSlider() {
+        mainImg.src = images[currentIndex];
+        thumbBtns.forEach((btn, index) => {
+          if (index === currentIndex) {
+            btn.classList.add("thumbnail-active");
+          } else {
+            btn.classList.remove("thumbnail-active");
+          }
+        });
+      }
+
+      function setSlide(index) {
+        currentIndex = index;
+        updateSlider();
+      }
+
+      function nextSlide() {
+        currentIndex = (currentIndex + 1) % images.length;
+        updateSlider();
+      }
+
+      function prevSlide() {
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        updateSlider();
+      }
+
+      // Simple scroll reveal interaction
+      document.addEventListener("DOMContentLoaded", () => {
+        const sections = document.querySelectorAll("section");
+        const observerOptions = {
+          threshold: 0.1,
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("opacity-100", "translate-y-0");
+              entry.target.classList.remove("opacity-0", "translate-y-4");
+            }
+          });
+        }, observerOptions);
+
+        sections.forEach((section) => {
+          section.classList.add(
+            "transition-all",
+            "duration-700",
+            "ease-out",
+            "opacity-0",
+            "translate-y-4",
+          );
+          observer.observe(section);
+        });
+      });
+    </script>
+  </body>
 </html>
