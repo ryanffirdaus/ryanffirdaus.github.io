@@ -13,7 +13,7 @@
     <header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-cloud-gray/20">
       <nav class="max-w-[1200px] mx-auto px-6 md:px-12 flex justify-between items-center h-20" aria-label="Main navigation">
         <a class="font-display text-heading font-extrabold text-primary" href="${home || "./"}"
-          >Alex Chen</a
+          >Ryan Faatih Firdaus</a
         >
         <div class="hidden md:flex items-center gap-8">
           ${navAnchor("#about", "About")}
@@ -41,10 +41,10 @@
           <a
             class="font-display text-subheading font-bold text-on-surface"
             href="${home || "./"}"
-            >Alex Chen</a
+            >Ryan Faatih Firdaus</a
           >
           <p class="font-caption text-caption text-muted-stone">
-            &copy; 2025 Alex Chen. Handcrafted with care and code.
+            &copy; 2025 Ryan Faatih Firdaus. Handcrafted with care and code.
           </p>
         </div>
         <nav aria-label="Footer links">
