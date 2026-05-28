@@ -15,7 +15,7 @@
     />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
     />
     <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
     <script src="./assets/js/tailwind.config.js"></script>
@@ -36,11 +36,7 @@
             <div
               class="inline-flex items-center gap-2 px-3 py-1 bg-subtle-mist rounded-full text-primary border border-primary/10"
             >
-              <span
-                class="material-symbols-outlined text-[18px]"
-                style="font-variation-settings: &quot;FILL&quot; 1"
-                >waving_hand</span
-              >
+              <i class="ri-hand-wave-line text-[18px]"></i>
               <span class="font-label text-label"
                 >Hi, I'm Ryan. Nice to meet you!</span
               >
@@ -93,7 +89,7 @@
                   <div
                     class="w-10 h-10 rounded-full bg-primary-fixed flex items-center justify-center text-primary"
                   >
-                    <span class="material-symbols-outlined">code</span>
+                    <i class="ri-code-s-slash-line"></i>
                   </div>
                   <div>
                     <p class="font-label text-label text-on-surface">
@@ -193,9 +189,7 @@
             <div
               class="w-12 h-12 rounded-xl bg-subtle-mist flex items-center justify-center text-primary"
             >
-              <span class="material-symbols-outlined text-[28px]"
-                >desktop_windows</span
-              >
+              <i class="ri-computer-line text-[28px]"></i>
             </div>
             <h3 class="font-heading text-heading text-on-surface">Frontend</h3>
             <div class="flex flex-wrap gap-2">
@@ -224,9 +218,7 @@
             <div
               class="w-12 h-12 rounded-xl bg-subtle-mist flex items-center justify-center text-primary"
             >
-              <span class="material-symbols-outlined text-[28px]"
-                >database</span
-              >
+              <i class="ri-database-2-line text-[28px]"></i>
             </div>
             <h3 class="font-heading text-heading text-on-surface">Backend</h3>
             <div class="flex flex-wrap gap-2">
@@ -263,7 +255,7 @@
             <div
               class="w-12 h-12 rounded-xl bg-subtle-mist flex items-center justify-center text-primary"
             >
-              <span class="material-symbols-outlined text-[28px]">cloud</span>
+              <i class="ri-cloud-line text-[28px]"></i>
             </div>
             <h3 class="font-heading text-heading text-on-surface">Others</h3>
             <div class="flex flex-wrap gap-2">
@@ -304,19 +296,13 @@
               <h2 class="font-display text-display text-on-surface mb-2">
                 My Recent Work
               </h2>
-              <p class="font-body text-heading text-slate-text">
-                A collection of systems I've helped build from the ground up.
-              </p>
             </div>
             <a
               class="text-primary font-label text-label flex items-center gap-2 group"
               href="#"
             >
               View all projects
-              <span
-                class="material-symbols-outlined group-hover:translate-x-1 transition-transform"
-                >arrow_forward</span
-              >
+              <i class="ri-arrow-right-line group-hover:translate-x-1 transition-transform"></i>
             </a>
           </div>
           <div
@@ -328,9 +314,9 @@
             >
               <div class="relative overflow-hidden aspect-video">
                 <img
-                  alt="Enterprise SaaS Dashboard"
+                  alt="Real-time IoT Monitoring & Internal ERP"
                   class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  src="./assets/images/projects/saas-dashboard.webp"
+                  src="./assets/images/projects/smartcool/saas-dashboard.webp"
                 />
                 <div
                   class="absolute inset-0 bg-primary/20 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center"
@@ -343,7 +329,7 @@
               </div>
               <div class="p-8 space-y-4">
                 <h3 class="font-heading text-heading text-on-surface">
-                  Enterprise SaaS Dashboard
+                  Real-time IoT Monitoring & Internal ERP
                 </h3>
                 <p class="font-body-sm text-body-sm text-slate-text">
                   Architected a multi-tenant platform for 10k+ users, focusing
@@ -356,6 +342,14 @@
                   >
                   <span
                     class="px-2 py-1 bg-subtle-mist text-slate-text rounded-[5px] text-[10px] uppercase font-bold tracking-wider"
+                    >TypeScript</span
+                  >
+                  <span
+                    class="px-2 py-1 bg-subtle-mist text-slate-text rounded-[5px] text-[10px] uppercase font-bold tracking-wider"
+                    >Laravel</span
+                  >
+                  <span
+                    class="px-2 py-1 bg-subtle-mist text-slate-text rounded-[5px] text-[10px] uppercase font-bold tracking-wider"
                     >Node.js</span
                   >
                 </div>
@@ -364,12 +358,10 @@
                 >
                   <a
                     class="text-primary font-label text-label inline-flex items-center gap-1"
-                    href="#"
+                    href="projects/api-services.html"
                   >
                     View details
-                    <span class="material-symbols-outlined text-sm"
-                      >open_in_new</span
-                    >
+                    <i class="ri-external-link-line text-sm"></i>
                   </a>
                 </div>
               </div>
@@ -419,9 +411,7 @@
                     href="#"
                   >
                     View details
-                    <span class="material-symbols-outlined text-sm"
-                      >open_in_new</span
-                    >
+                    <i class="ri-external-link-line text-sm"></i>
                   </a>
                 </div>
               </div>
@@ -471,9 +461,7 @@
                     href="#"
                   >
                     View details
-                    <span class="material-symbols-outlined text-sm"
-                      >open_in_new</span
-                    >
+                    <i class="ri-external-link-line text-sm"></i>
                   </a>
                 </div>
               </div>
@@ -595,7 +583,7 @@
                 class="bg-surface text-primary px-8 py-4 rounded-xl font-subheading text-subheading elevated-shadow hover:bg-subtle-mist transition-all flex items-center gap-3"
                 href="mailto:ryanfaatih.firdaus@gmail.com"
               >
-                <span class="material-symbols-outlined">mail</span>
+                <i class="ri-mail-line"></i>
                 Email me
               </a>
               <div class="flex items-center gap-4">
@@ -603,7 +591,7 @@
                   class="w-14 h-14 rounded-full border-2 border-primary-fixed text-primary-fixed flex items-center justify-center hover:bg-primary-fixed hover:text-primary transition-all"
                   href="#"
                 >
-                  <span class="material-symbols-outlined">link</span>
+                  <i class="ri-links-line"></i>
                 </a>
               </div>
             </div>

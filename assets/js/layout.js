@@ -27,7 +27,7 @@
           >
         </div>
         <button class="md:hidden text-primary p-2" aria-label="Open menu">
-          <span class="material-symbols-outlined">menu</span>
+          <i class="ri-menu-line"></i>
         </button>
       </nav>
     </header>`;
@@ -43,23 +43,28 @@
             href="${home || "./"}"
             >Ryan Faatih Firdaus</a
           >
-          <p class="font-caption text-caption text-muted-stone">
-            &copy; 2025 Ryan Faatih Firdaus. Handcrafted with care and code.
-          </p>
         </div>
         <nav aria-label="Footer links">
           <ul class="flex items-center gap-8 list-none p-0 m-0">
             <li>
-              <a class="text-muted-stone hover:text-primary transition-colors font-caption text-caption" href="#">GitHub</a>
+              <a class="text-muted-stone hover:text-primary transition-colors" href="https://github.com/ryanffirdaus" aria-label="GitHub">
+                <i class="ri-github-fill w-5 h-5"></i>
+              </a>
             </li>
             <li>
-              <a class="text-muted-stone hover:text-primary transition-colors font-caption text-caption" href="#">LinkedIn</a>
+              <a class="text-muted-stone hover:text-primary transition-colors" href="https://www.linkedin.com/in/ryanffirdaus/" aria-label="LinkedIn">
+                <i class="ri-linkedin-box-fill w-5 h-5"></i>
+              </a>
             </li>
             <li>
-              <a class="text-muted-stone hover:text-primary transition-colors font-caption text-caption" href="#">X (Twitter)</a>
+              <a class="text-muted-stone hover:text-primary transition-colors" href="https://www.instagram.com/ryanffirdaus/" aria-label="Instagram">
+                <i class="ri-instagram-line w-5 h-5"></i>
+              </a>
             </li>
             <li>
-              <a class="text-muted-stone hover:text-primary transition-colors font-caption text-caption" href="#">Resume</a>
+              <a class="text-muted-stone hover:text-primary transition-colors" href="https://www.linkedin.com/in/ryanffirdaus/" aria-label="Resume">
+                <i class="ri-file-text-fill w-5 h-5"></i>
+              </a>
             </li>
           </ul>
         </nav>
